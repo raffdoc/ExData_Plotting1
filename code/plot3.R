@@ -1,0 +1,6 @@
+png("figure/plot3.png", width = 480, height = 480, units = "px")
+plot(pow.dfs$Sub_metering_1~pow.dfs$NewD,type="l",xlab="",ylab="Global Active Power")
+lines(pow.dfs$Sub_metering_2~pow.dfs$NewD,type="l",col="red")
+lines(pow.dfs$Sub_metering_3~pow.dfs$NewD,type="l",col="blue")
+legend("topright",pch="_",col=1:3,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+dev.off()
